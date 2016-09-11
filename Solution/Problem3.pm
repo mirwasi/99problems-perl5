@@ -3,11 +3,7 @@ package Solution::Problem3;
 use strict;
 use warnings;
 
-sub new {
-    my $class = shift;
-    my $items = shift;
-    return bless { items => $items }, $class;
-}
+use parent qw(Solution::BaseList);
 
 sub kth_item {
     my ($self, $k) = @_;

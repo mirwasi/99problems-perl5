@@ -3,13 +3,9 @@ package Solution::Problem6;
 use strict;
 use warnings;
 
-use Solution::Problem5;
+use parent qw(Solution::BaseList);
 
-sub new {
-    my $class = shift;
-    my $items = shift;
-    return bless { items => $items }, $class;
-}
+use Solution::Problem5;
 
 sub check_palindrome {
     my $self = shift;
