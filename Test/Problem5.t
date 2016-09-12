@@ -11,7 +11,7 @@ use Solution::Problem5;
 
 my $t0 = Solution::Problem5->new([5, 4, 3, 2, 1]);
 
-ok(@{$t0->reverse_array()} == @{[1, 2, 3, 4, 5]}, 'Basic test');
+ok(@{$t0->reverse_list()} == @{[1, 2, 3, 4, 5]}, 'Basic test');
 
 # Problem 5
 

@@ -5,7 +5,7 @@ use warnings;
 
 use parent qw(Solution::BaseList);
 
-sub reverse_array {
+sub reverse_list {
     my $self = shift;
     my $array = $self->{items};
 

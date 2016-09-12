@@ -5,7 +5,7 @@ use warnings;
 
 use parent qw(Solution::BaseList);
 
-use Solution::Problem5;
+use aliased "Solution::Problem5" => "ListReverser";
 
 sub check_palindrome {
     my $self = shift;
@@ -14,7 +14,7 @@ sub check_palindrome {
     die "No array was set" unless $array;
 
     my $rev_array =
-	Solution::Problem5->new($self->{items})->reverse_array();
+	ListReverser->new($self->{items})->reverse_list();
 
     return @$array == @$rev_array ? "yes" : "no";
 }
